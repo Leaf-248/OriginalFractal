@@ -30,10 +30,10 @@ public void fractal(float x, float y, float l){
   fill(250, 0, 0, 1.5);
   quad(x, y, x+l*.5, y+l*.5, x, y+l, x-l*.5, .5*l+y); 
   if(l<=120){
-    fractal(x+l*.35, y+l*.15, l*1.25);
-    fractal(x, y+l*.5, l*1.25);
-    fractal(x-l*.35, y+l*.15, l*1.25);
-    fractal(x, y-l*.2, l*1.25);
+    fractal(x+l*.35, y+l*.15, l*1.45);
+    fractal(x, y+l*.5, l*1.45);
+    fractal(x-l*.35, y+l*.15, l*1.45);
+    fractal(x, y-l*.2, l*1.45);
   }
 }
 
