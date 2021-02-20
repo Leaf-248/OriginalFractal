@@ -6,22 +6,11 @@ public void setup(){
 public void draw(){
   circs(180, 70, 70);
   circsDown(180, 387, 70);
-  //tassles(120, 320);
+
   fill(255);
   quad(180, 67.34375, 340, 230.03516, 180, 387, 20, 230.03516);
   fractal(180, 125, 50);
   
-}
-
-public void tassles(float x, float y){
-  int r = (int)(Math.random()*200);
-  int g = (int)(Math.random()*200);
-  noStroke();
-  rect(x, y, 2, 100);
-  fill(r, g, 0, 1);
-  if(x<=220){
-    tassles(x+2, y);   
-  }
 }
 
 public void fractal(float x, float y, float l){
